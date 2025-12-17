@@ -1,0 +1,1 @@
+Blueprint('public', __name__)
