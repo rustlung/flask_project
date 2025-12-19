@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 
 from app.config import get_config
 from app.extensions import db, migrate
+from app.routes import register_blueprints
 import os
 
 load_dotenv()
@@ -16,6 +17,7 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
     ## Регистрируем blueprint'ы
+    register_blueprints(app)
     return app
 
 
