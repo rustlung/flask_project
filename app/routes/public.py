@@ -50,3 +50,4 @@ def list_timeline():
 
     timelines = query.all()
     return jsonify(schema.dump(timelines))
+

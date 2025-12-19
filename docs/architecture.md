@@ -31,3 +31,6 @@ docs/
 └── maybe_more.md
 tests/
 └── test_public_endpoints.py
+
+Шаг 1 - Реализация блюпринтов, тестов - готово
+Шаг 2 - Реализация frontend на Jinja
